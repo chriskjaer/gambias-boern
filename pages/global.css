@@ -1,0 +1,24 @@
+html,
+body,
+#react-mount {
+  height: 100%;
+}
+
+html {
+  line-height: 1.15;
+}
+
+p {
+  max-width: 28em;
+  line-height: 1.5;
+  font-size: 1rem;
+  font-weight: 200;
+  margin-bottom: 2em;
+}
+
+@media(min-width: 30em) {
+  ol, p, ul {
+    font-size: 1.5rem;
+  }
+}
+

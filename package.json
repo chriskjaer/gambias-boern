@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "gambias-boern",
+  "description": "Gambias Børns Webiste",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Chris Kjær <mail@chriskjaer.dk>",
   "dependencies": {
     "classnames": "2.2.5",
     "front-matter": "^2.0.7",
@@ -29,9 +29,6 @@
   "devDependencies": {
     "gh-pages": "0.11.0"
   },
-  "keywords": [
-    "gatsby"
-  ],
   "license": "MIT",
   "main": "n/a",
   "scripts": {

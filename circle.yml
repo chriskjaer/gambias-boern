@@ -6,4 +6,6 @@ deployment:
   all:
     branch: master
     commands:
+      - git config user.email "chriskjaer.dk+circleci@gmail.com"
+      - git config user.name "Beep Boop CircleCI Bot"
       - npm run deploy

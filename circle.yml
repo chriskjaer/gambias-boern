@@ -1,0 +1,9 @@
+machine:
+  node:
+    version: 6.7.0
+
+deployment:
+  all:
+    branch: master
+    commands:
+      - npm run deploy

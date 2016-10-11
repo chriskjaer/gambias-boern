@@ -27,7 +27,7 @@
     "typography-plugin-code": "^0.13.0"
   },
   "devDependencies": {
-    "gh-pages": "^0.11.0"
+    "gh-pages": "0.11.0"
   },
   "keywords": [
     "gatsby"

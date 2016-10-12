@@ -24,26 +24,26 @@ export default class Index extends React.Component {
               og dermed overlevelses muligheder, og gerne på et niveau der også i vore øjne er rimeligt.
             </p>
 
-            <Link className='link fw6 ba pa3 dim yellow ttu tracked dib' to={prefixLink('/')}>Vores mission</Link>
+            <Link className='link fw6 ba pa3 dim yellow ttu tracked dib' to={prefixLink('/vores-mission')}>Vores mission</Link>
           </div>
           <img src={image} alt='Gambias Børn' />
         </div>
 
         <div className='flex flex-row flex-wrap justify-center w-100'>
           <Box
-            link='/'
+            link={prefixLink('/')}
             title='Støt formålet'
             content='Bliv medlem eller giv et tilskud til Gambias Børn'
             button='Støt' />
 
           <Box
-            link='/'
+            link={prefixLink('/det-kedelige')}
             title='Menneskene bag'
             content='Mød ildsjælene bag Gambias Børn'
             button='Om os' />
 
           <Box
-            link='/'
+            link='https://www.facebook.com/Gambias-B%C3%B8rn-213282445757997/'
             title='Find os på Facebook'
             content='Bliv medlem eller giv et tilskud til Gambias Børn'
             button='Facebook' />
@@ -58,7 +58,7 @@ const Box = ({title, content, button, link}) => (
   <div className='bt bw2 flex flex-column flex-auto measure-narrow ma4 pt4 b--black'>
     <h2 className='mt0 mb2'>{title}</h2>
     <p className='flex-auto'>{content}</p>
-    <Link className='db mb3 self-end bg-yellow link fw6 ba pa3 grow white ttu tracked dib' to={prefixLink(link)}>
+    <Link className='db mb3 self-end bg-yellow link fw6 ba pa3 grow white ttu tracked dib' to={link}>
       {button}
     </Link>
   </div>

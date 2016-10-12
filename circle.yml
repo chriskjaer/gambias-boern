@@ -4,11 +4,10 @@ machine:
 
 dependencies:
   cache_directories:
-    - $HOME/.yarn-cache
-    - $HOME/.yarn
-    - node_modules
+    - ~/.yarn-cache
+    - ~/.yarn
   pre:
-    - if [[ ! -e $HOME/.yarn ]]; then curl -o- -L https://yarnpkg.com/install.sh | bash; fi
+    - if [[ ! -e ~/.yarn ]]; then curl -o- -L https://yarnpkg.com/install.sh | bash; fi
   override:
     - yarn
 

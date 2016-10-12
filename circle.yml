@@ -2,10 +2,20 @@ machine:
   node:
     version: 6.7.0
 
+dependencies:
+  cache_directories:
+    - $HOME/.yarn-cache
+    - $HOME/.yarn
+    - node_modules
+  pre:
+    - if [[ ! -e $HOME/.yarn ]]; then curl -o- -L https://yarnpkg.com/install.sh | bash; fi
+  override:
+    - yarn
+
 deployment:
   all:
     branch: master
     commands:
       - git config --global user.email "chriskjaer.dk+circleci@gmail.com"
       - git config --global user.name "Beep Boop CircleCI Bot"
-      - npm run deploy
+      - yarn run deploy

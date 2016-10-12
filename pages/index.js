@@ -32,7 +32,7 @@ export default class Index extends React.Component {
         <div className='flex flex-row flex-wrap justify-center w-100'>
           <Box
             link='/'
-            title='Søt formålet'
+            title='Støt formålet'
             content='Bliv medlem eller giv et tilskud til Gambias Børn'
             button='Støt' />
 
